@@ -1,0 +1,27 @@
+pipeline{
+agent any 
+     stages{
+          stages ('build'){
+          steps{ 
+          sh 'podman build -t amin/app-node-web'
+          }
+          
+          }
+                
+     
+     
+     
+     
+     
+     
+     
+     
+     }
+
+
+
+
+
+
+
+}
