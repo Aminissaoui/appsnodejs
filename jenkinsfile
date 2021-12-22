@@ -3,7 +3,7 @@ agent any
      stages{
           stage('build'){
           steps{ 
-          sh 'podman build -t amin/app-node-web'
+          sh 'docker build -t amin/app-node-web'
           }
           
           }
