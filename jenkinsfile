@@ -1,9 +1,9 @@
 pipeline{
-agent any 
+agent { label 'linux'} 
      stages{
           stage('build'){
           steps{ 
-          sh 'docker build -t amin/app-node-web'
+          sh 'docker build -t amin/app-node-web .'
           }
           
           }
