@@ -1,7 +1,7 @@
 pipeline{
 agent any 
      stages{
-          stages ('build'){
+          stage('build'){
           steps{ 
           sh 'podman build -t amin/app-node-web'
           }
